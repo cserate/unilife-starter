@@ -1,0 +1,30 @@
+
+.header{
+    background-color: #00A2E1;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px
+}
+.logo-container{
+display: flex;
+
+}
+
+.icon-links{
+    display: flex;
+    align-items: center;
+}
+
+.shortlist-container{
+
+}
+
+.contact-container{
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
