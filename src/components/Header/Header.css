@@ -14,15 +14,11 @@
 }
 .logo-container{
 display: flex;
-border: 1px solid black;
 align-items: center;
 margin: 10px;
 justify-content: space-evenly;
 }
 
-.house{
-
-}
 .logo{
     padding-left: 10px;
 }
