@@ -3,14 +3,14 @@
     font-family: 'Epilogue', sans-serif;
 }
 .header{
-    background-color: #00A2E1;
+    background-color: var(--blue);
     color: white;
-    height: 50px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 10px;
-    padding-right: 10px
+    padding-right: 10px;
 }
 .logo-container{
 display: flex;
