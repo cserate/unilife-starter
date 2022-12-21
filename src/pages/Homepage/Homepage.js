@@ -2,6 +2,7 @@ import axios from 'axios';
 import React from 'react'
 import Banner from '../../components/Banner/Banner'
 import CityCard from '../../components/CityCard/CityCard';
+import Compare from '../../components/Compare/Compare';
 import './Homepage.css'
 
 function Homepage() {
@@ -48,6 +49,10 @@ React.useEffect(
           }
         </div>
         <button className='see-all-cities-btn'>See All Cities</button>
+      </div>
+      <div className='compare-container'>
+        <h3 className='compare-all'>Compare all inclusive student homes</h3>
+        <Compare />
       </div>
     </div>
   )

@@ -21,3 +21,13 @@
     padding: 8px;
 
 }
+
+.compare-container{
+    background-color: #F6FAFD;
+    border-radius: 24px;
+}
+
+.compare-all{
+    color: var(--black);
+    text-align: center;
+}
