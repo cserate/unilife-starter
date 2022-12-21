@@ -10,7 +10,7 @@ function Banner() {
         backgroundSize:'cover',
         backgroundPosition:'center',
         backgroundRepeat:'no-repeat',
-        height:"60vh",
+        height:"40vh",
         position: "relative" 
   }
   return (

@@ -1,0 +1,23 @@
+.search-container{
+    text-align: center;
+}
+
+.accomodations-container{
+    text-align: center;
+   
+}
+
+.city-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.see-all-cities-btn{
+    background-color: var(--darkblue);
+    color: var(--white);
+    border-radius: 8px;
+    padding: 8px;
+
+}

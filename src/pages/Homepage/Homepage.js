@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, {useEffect} from 'react'
+import React from 'react'
 import Banner from '../../components/Banner/Banner'
 import CityCard from '../../components/CityCard/CityCard';
 import './Homepage.css'
@@ -15,12 +15,12 @@ const [cities, setCities] = React.useState([])
 React.useEffect(
   ()=>{
       //call api to get cities
-      axios.get(`${baseUrl}/cities?limit=20`)
+      axios.get(`${baseUrl}/cities`)
       // https://unilife-server.herokuapp.com/cities
       .then (res =>{
-        console.log(res.data);
+        console.log(res.data.response);
         //store the data from the api into state
-        setCities(res.data)
+        setCities(res.data.response)
       })
       .catch(err => console.log(err))
 }, []
@@ -34,13 +34,20 @@ React.useEffect(
 
       <div className='accomodations-container'>
         <h3>Student accomodations in our top cities</h3>
-        <div className='city-card container'>
-        {
-              setCities.map(item=> <p>{item.title}</p>)
-              }
-          {/* <CityCard /> */}
+        <div className='city-card-container'>
+          {/* {
+          cities.map (item=> <p>{item.name}</p>)
+          } */}
+          {
+          cities.map(item=> <CityCard     
+                                          city={item}
+                                          imgUrl={item.image_url}
+                                           />)
+                                          
+                                          
+          }
         </div>
-        <button>See All Cities</button>
+        <button className='see-all-cities-btn'>See All Cities</button>
       </div>
     </div>
   )
