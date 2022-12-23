@@ -50,6 +50,7 @@ React.useEffect(
                                           
           }
         </div>
+        {/* onClick needed below to link to the See All Cities Page */}
         <button className='see-all-cities-btn'>See All Cities</button>
       </div>
       <div className='compare-container'>
