@@ -4,6 +4,7 @@ import Banner from '../../components/Banner/Banner'
 import Banner2 from '../../components/Banner2/Banner2';
 import CityCard from '../../components/CityCard/CityCard';
 import Compare from '../../components/Compare/Compare';
+import Footer from '../../components/Footer/Footer';
 import './Homepage.css'
 
 function Homepage() {
@@ -56,6 +57,7 @@ React.useEffect(
         <Compare />
       </div>
         <Banner2 />
+        
     </div>
   )
 }
