@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React from 'react'
 import Banner from '../../components/Banner/Banner'
+import Banner2 from '../../components/Banner2/Banner2';
 import CityCard from '../../components/CityCard/CityCard';
 import Compare from '../../components/Compare/Compare';
 import './Homepage.css'
@@ -54,6 +55,7 @@ React.useEffect(
         <h3 className='compare-all'>Compare all inclusive student homes</h3>
         <Compare />
       </div>
+        <Banner2 />
     </div>
   )
 }
