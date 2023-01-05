@@ -3,6 +3,8 @@ import axios from 'axios'
 import './SeeAllCities.css'
 import Banner from '../../components/Banner/Banner'
 import CityButtons from '../../components/CityButtons/CityButtons'
+import Footer from '../../components/Footer/Footer'
+
 
 
 
@@ -32,12 +34,14 @@ function SeeAllCities() {
     //the banner component works, but has the wrong text
     <div className='see-all-cities-page'>
         <Banner />
-        <div className='city-search-container'></div>
+        
             <h3>Search by City</h3>
+        
             <div className='city-buttons-container'>
                 {cities.map(item=> <CityButtons     
                                                     city={item} />)}
             </div>
+        
     </div>
   )
 }

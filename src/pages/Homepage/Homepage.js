@@ -5,6 +5,7 @@ import Banner2 from '../../components/Banner2/Banner2';
 import CityCard from '../../components/CityCard/CityCard';
 import Compare from '../../components/Compare/Compare';
 import Footer from '../../components/Footer/Footer';
+import { Link } from 'react-router-dom';
 import './Homepage.css'
 
 function Homepage() {
@@ -51,7 +52,9 @@ React.useEffect(
           }
         </div>
         {/* onClick needed below to link to the See All Cities Page */}
-        <button className='see-all-cities-btn'>See All Cities</button>
+        <Link to={`/seeallcities/`}>
+          <button className='see-all-cities-btn'>See All Cities</button>
+        </Link>
       </div>
       <div className='compare-container'>
         <h3 className='compare-all'>Compare all inclusive student homes</h3>
